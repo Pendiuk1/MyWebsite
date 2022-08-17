@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-    <div class="form" v-if="!answered">
+        <div class="form" v-if="!answered">
             <form @submit="onSubmit">
                 <div class="inputBox">
                     <input type="text" id="username" required="required" v-model="user.name" placeholder=" ">
@@ -273,6 +273,26 @@ footer{
 .fade-leave-to,
 .fade-enter-from{
     opacity: 0;
+}
+
+@media only screen and (max-height: 360px){
+    .form{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 360px;
+        flex-direction: column;
+        background: #000;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    footer{
+        position:initial;
+        margin: 20px 20px 5px;
+    }
 }
 
 
