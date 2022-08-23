@@ -2,6 +2,8 @@
 
 This is the development of my [website](https://pendiuk.com) using Vue3.JS, Vue Router, Vite, Pinia (future release), etc.
 
+### Version 1.0.0 -> DEPRECATED
+
 
 ## Project Setup
 
